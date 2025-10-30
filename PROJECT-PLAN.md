@@ -1,6 +1,6 @@
 # ❄️ Final Project Plan  
 **CSC/DSCI 4851/6851 — Fall 2025**  
-**Team Members:** Ishtiaq Chowdhury & Ali Al Anbari  
+**Team Members:** Ishtiaq Chowdhury & Ali [Last Name]  
 **Project Title:** *Snowflake Morphology Classification Using Deep Learning*  
 
 ---
@@ -10,7 +10,7 @@
 | Milestone | Deliverable | Due Date | Status |
 |------------|--------------|----------|---------|
 | Project Proposal | 1-paragraph proposal (PDF) | ✅ Oct 10 2025 | **Submitted** |
-| Project Milestone | 2–3 page report + presentation | ⏳ Oct 31 2025 | **Upcoming** |
+| Project Milestone | 2–3 page report + presentation | ⏳ Oct 31 2025 | **In progress** |
 | Final Report & Presentation | 6–8 page CVPR-style paper + slides | ⏳ Dec 12 2025 | **Upcoming** |
 
 ---
@@ -27,12 +27,13 @@ This is an *application-track* project applying **EfficientNet-B0** transfer lea
 **Progress**
 - [x] Project proposal written and approved  
 - [x] GitHub repo initialized (`snowflake-morphology-classifier`) with Python `.gitignore`, MIT License, and README  
-- [ ] Decide whether to use **TensorFlow** or **PyTorch** (EfficientNet-B0 is available in both)  
-- [ ] Set up environment (Google Colab, Kaggle Notebook, or local GPU)  
+- [x] Decided to use **TensorFlow / Keras** (EfficientNet-B0 pretrained on ImageNet)  
+- [X] Set up and verified Colab environment with GPU + Drive mount  
+- [x] Created partial folder structure (adding others as needed)  
 
 **Outputs**
 - [x] `proposal.pdf`  
-- [ ] Organized folder structure for code and data  
+- [x] Repository initialized and organized for upcoming code/data  
 
 ---
 
@@ -40,13 +41,13 @@ This is an *application-track* project applying **EfficientNet-B0** transfer lea
 **Goals**
 - [ ] Download a manageable **subset of MASCDB** from Zenodo (~20 k–50 k images)  
 - [ ] Extract **metadata CSV** and keep only five classes (*Dendrites, Plates, Columns, Aggregates, Graupel*)  
-- [ ] Reorganize into **folder-per-class** structure or maintain CSV labels  
+- [ ] Reorganize into **folder-per-class** structure or maintain CSV label mapping  
 - [ ] Split dataset into **train (70 %)**, **validation (15 %)**, and **test (15 %)**  
-- [ ] Apply basic **data augmentation** (flip, rotate, brightness, contrast)  
+- [ ] Apply **data augmentation** (flip, rotate, brightness, contrast)  
 
 **Outputs**
 - [ ] Cleaned dataset folder (or CSV)  
-- [ ] Preprocessing script (`data_prep.py` or `prep_notebook.ipynb`)  
+- [ ] Preprocessing notebook (`data_prep.ipynb` or `data_prep.py`)  
 
 ---
 
@@ -88,7 +89,7 @@ This is an *application-track* project applying **EfficientNet-B0** transfer lea
 **Goals**
 - [ ] Evaluate model on test set  
 - [ ] Generate confusion matrix + sample predictions  
-- [ ] Compute Accuracy, Precision, Recall, F1-score  
+- [ ] Compute Accuracy, Precision, Recall, and F1-score  
 - [ ] (Optional) Visualize feature importance with Grad-CAM  
 
 **Outputs**
